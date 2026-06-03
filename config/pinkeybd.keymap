@@ -14,6 +14,13 @@
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -34,7 +41,7 @@
 &kp LEFT_CONTROL  &lt 1 INT_MUHENKAN  &kp LEFT_SHIFT  &mkp LCLK  &kp TAB  &kp LEFT_ALT  &kp SPACE  &lt 2 INT_HENKAN  &lt 5 ESCAPE
             >;
 
-            sensor-bindings = <&rot_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -70,7 +77,7 @@
 &kp LSHIFT       &mo 5              &kp SPACE  &kp LALT         &kp PSCRN    &kp RSHIFT  &kp ENTER      &trans       &kp RSHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DEC>;
+            sensor-bindings = <&inc_dec_kp C_BRI_DEC C_BRI_UP>;
         };
 
         // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
