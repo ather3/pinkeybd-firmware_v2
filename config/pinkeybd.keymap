@@ -56,7 +56,7 @@
         Lower_layer {
             bindings = <
 &kp LC(SPACE)  &kp UP_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TAB    &kp LEFT_WIN  &kp N7        &kp N8        &kp N9        &kp N0     &kp CARET
-&kp LEFT       &kp DOWN      &kp RIGHT         &kp BACKSPACE      &kp CLCK   &kp K_MUTE    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &kp EQUAL
+&kp LEFT       &kp DOWN      &kp RIGHT         &kp BACKSPACE      &kp ENTER  &kp K_MUTE    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &kp EQUAL
 &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3       &kp SPACE  &kp F7        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &kp ASTERISK
 &to 3          &trans        &kp LEFT_SHIFT    &none              &kp PSCRN  &kp HOME      &kp END       &kp LS(CAPS)  &to 5
             >;
@@ -130,7 +130,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &none  &none       &none  &bt BT_CLR  &bt BT_CLR_ALL
 &none         &none         &none         &none         &none         &none         &none  &bt BT_PRV  &none  &bt BT_NXT  &none
 &none         &none         &none         &none         &none         &none         &none  &none       &none  &none       &none
-&none         &none         &none         &none         &none         &none         &none  &none       &none
+&to 0         &none         &none         &none         &none         &none         &none  &none       &none
             >;
         };
     };
